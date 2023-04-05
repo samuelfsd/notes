@@ -1,4 +1,5 @@
 import { Button } from "../../components/Button"
+import { ButtonText } from "../../components/ButtonText"
 import { Header } from "../../components/Header"
 import { Section } from "../../components/Section"
 import { Tag } from "../../components/Tag"
@@ -8,6 +9,7 @@ export function Details() {
   return (
     <Container>
       <Header />
+      <ButtonText title="Excluir nota" />
 
       <Section title="Links úteis" >
         <Links>
