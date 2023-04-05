@@ -3,27 +3,38 @@ import { ButtonText } from "../../components/ButtonText"
 import { Header } from "../../components/Header"
 import { Section } from "../../components/Section"
 import { Tag } from "../../components/Tag"
-import { Container, Links } from "./styles"
+import { Container, Links,Content } from "./styles"
 
 export function Details() {
   return (
     <Container>
       <Header />
-      <ButtonText title="Excluir nota" />
+      
+      <main>
+        <Content>
+          <ButtonText title="Excluir nota" />
 
-      <Section title="Links úteis" >
-        <Links>
-          <li><a href="#">https://github.com/samuelfsd</a></li>
-          <li><a href="#">https://github.com/samuelfsd</a></li>
-        </Links>
-      </Section>
+          <h1>Introdução ao react</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Libero debitis assumendaveritatis porro molestias sunt dicta aliquam itaque,
+            et consequatur eligendi quidem provident minima illum praesentium excepturi a sapiente dolorem?
+          </p>
 
-      <Section title="Marcadores" >
-          <Tag title="Java" />
-          <Tag title="javascript" />
-      </Section>
+          <Section title="Links úteis" >
+            <Links>
+              <li><a href="#">https://github.com/samuelfsd</a></li>
+              <li><a href="#">https://github.com/samuelfsd</a></li>
+            </Links>
+          </Section>
 
-      <Button title="Voltar" />
+          <Section title="Marcadores" >
+              <Tag title="Java" />
+              <Tag title="javascript" />
+          </Section>
+
+          <Button title="Voltar" />
+        </Content>
+      </main>
     </Container>
   )
 }
